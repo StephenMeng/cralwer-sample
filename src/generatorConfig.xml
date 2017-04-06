@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry location="G:\java\jdk\opensource\mysql-connector-java-5.1.38-bin.jar" />
+	<context id="context1">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/test?characterEncoding=utf8"
+			userId="root" password="016611sai" />
+		<javaModelGenerator targetPackage="com.stephen.crawler.entity"
+			targetProject="crawler-sample" />
+		<sqlMapGenerator targetPackage="com.stephen.crawler.entity"
+			targetProject="crawler-sample" />
+		<javaClientGenerator targetPackage="com.stephen.crawler.entity"
+			targetProject="crawler-sample" type="XMLMAPPER" />
+		<table schema="dbo" tableName="info" domainObjectName="Info"
+			enableCountByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" enableUpdateByExample="false">
+			<generatedKey column="NAME" sqlStatement="mysql" identity="true" />
+			<!-- <columnOverride column="AUTHOR" javaType="java.lang.String" jdbcType="VARCHAR" 
+				/> <columnOverride column="AUTHOR_DETAIL" javaType="java.lang.String" jdbcType="VARCHAR" 
+				/> <columnOverride column="TAG" javaType="java.lang.String" jdbcType="VARCHAR" 
+				/> <columnOverride column="CONTENT" javaType="java.lang.String" jdbcType="VARCHAR" 
+				/> <columnOverride column="SUMMARY" javaType="java.lang.String" jdbcType="VARCHAR" 
+				/> -->
+		</table>
+	</context>
+</generatorConfiguration>
